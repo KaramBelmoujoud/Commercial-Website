@@ -12,7 +12,7 @@ export default function Example() {
   const [openNav, setOpenNav] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () =>{
-    if(window.scrollY >= 420){
+    if(window.scrollY >= 220){
       setColorchange(true);
     }
     else{
@@ -36,7 +36,7 @@ export default function Example() {
         className="p-1 font-semibold"
       >
         <a href="#" className="flex items-center focus:underline underline-offset-8  decoration-4">
-          Pages
+         Home
         </a>
       </Typography>
       <Typography
@@ -45,8 +45,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#" className="flex items-center focus:underline underline-offset-8  decoration-4">
-          Account
+        <a href="#AboutUs" className="flex items-center focus:underline underline-offset-8  decoration-4">
+        About Us
+         
         </a>
       </Typography>
       <Typography
@@ -55,25 +56,16 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#" className="flex items-center focus:underline underline-offset-8  decoration-4">
-          Blocks
+        <a href="#Products" className="flex items-center focus:underline underline-offset-8  decoration-4">
+        Products
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-semibold"
-      >
-        <a href="#" className="flex items-center focus:underline underline-offset-8 decoration-4">
-          Docs
-        </a>
-      </Typography>
+      
     </ul>
   );
  
   return (
-    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md  bg-slate-50 fixed z-10 ':'w-full left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10'}>
+    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 ':'w-full left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10'}>
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -85,7 +77,7 @@ export default function Example() {
         </Typography>
         
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="lg" className="hidden shadow-xl lg:inline-block ">
+        <Button variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "hidden shadow-xl lg:inline-block "}>
           <span>Contact Us</span>
         </Button>
         <IconButton
