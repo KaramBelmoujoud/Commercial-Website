@@ -7,6 +7,7 @@ import pesca from '../assets/pes.png'
 import { slideInUp } from 'react-animations'
 import AboutUs from '../components/AboutUs';
 import ContactUs from '../components/ContactUs';
+import Footer from '../components/Footer';
 const slideInUpAnimation = keyframes`${slideInUp}`
   const Slidediv = styled.div`
   animation:1.5s ${slideInUpAnimation};
@@ -42,6 +43,7 @@ function Home() {
       </Slidediv>
       <AboutUs />
       <ContactUs id="contact" />
+   <Footer/>
       </div>
 
 
