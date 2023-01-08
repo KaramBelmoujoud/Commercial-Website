@@ -25,6 +25,7 @@ function Home() {
     <Slidediv>
     <Entreheader/>
    <AboutUs id="About"/>
+   <ContactUs id="Contact"/>
    <Footer />
       </Slidediv>
       </div>

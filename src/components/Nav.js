@@ -77,7 +77,7 @@ export default function Example() {
         </Typography>
         
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "hidden shadow-xl lg:inline-block "}>
+        <Button href='#Contact' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "hidden shadow-xl lg:inline-block "}>
           <span>Contact Us</span>
         </Button>
         <IconButton
@@ -120,7 +120,7 @@ export default function Example() {
       </div>
       <MobileNav open={openNav}>
         {navList}
-        <Button variant="gradient" size="sm" fullWidth className="mb-2">
+        <Button href='#Contact' variant="gradient" size="sm" fullWidth className="mb-2">
           <span>Contact Us</span>
         </Button>
       </MobileNav>
