@@ -8,6 +8,7 @@ import { slideInUp } from 'react-animations'
 import AboutUs from '../components/AboutUs';
 import ContactUs from '../components/ContactUs';
 import Footer from '../components/Footer';
+import Entreheader from '../components/Entreheader';
 const slideInUpAnimation = keyframes`${slideInUp}`
   const Slidediv = styled.div`
   animation:1.5s ${slideInUpAnimation};
@@ -22,28 +23,10 @@ function Home() {
     <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
     </div>
     <Slidediv>
-        <div className='relative  border-blue-500 border-b-4 '>
-          <Example />
-          <div className='flex flex-col items-center   justify-center h-screen w-screen bg-[url("/src/assets/sands.jpg")]'>
-            <div className='text-center'>
-              <h1 className='text-6xl '>Pescatitan</h1>
-              <h2 className='text-2xl '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</h2>
-              <Link to='#contact'>
-                <button className= ' w-2/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl mt-4'>
-                  Contact Us
-                </button>
-              </Link>
-            </div>
-          </div>
-          {window.innerWidth > 768 ? (
-            <div className='top-4 left-14 absolute'>
-              <img src={pesca} alt="logo" className="h-28 w-20" />
-            </div>) : (null)}
-        </div>
+    <Entreheader/>
+   <AboutUs id="About"/>
+   <Footer />
       </Slidediv>
-      <AboutUs />
-      <ContactUs id="contact" />
-   <Footer/>
       </div>
 
 
