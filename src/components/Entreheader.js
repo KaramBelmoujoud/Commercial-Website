@@ -10,12 +10,13 @@ function Entreheader() {
     <div className='flex flex-col items-center   justify-center h-screen w-screen bg-[url("/src/assets/sands.jpg")]'>
       <div className='text-center'>
         <h1 className='text-6xl '>Pescatitan</h1>
-        <h2 className='text-2xl '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</h2>
-        <Link to='#Contact'>
-          <button className= ' w-2/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl mt-4'>
-            Contact Us
+        <h2 className='text-2xl '>Your trusted source for seafood</h2>
+        <a href="#Contact">
+          <button  className= ' w-2/4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl mt-4'>
+          <span>Contact Us</span>
           </button>
-        </Link>
+          </a>
+        
       </div>
     </div>
     {window.innerWidth > 768 ? (

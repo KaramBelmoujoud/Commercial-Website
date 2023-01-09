@@ -24,8 +24,8 @@ function Home() {
     </div>
     <Slidediv>
     <Entreheader/>
-   <AboutUs id="About"/>
-   <ContactUs id="Contact"/>
+   <AboutUs />
+   <ContactUs />
    <Footer />
       </Slidediv>
       </div>

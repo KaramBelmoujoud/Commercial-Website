@@ -78,7 +78,7 @@ export default function Example() {
         
         <div className="hidden lg:block">{navList}</div>
         <Button href='#Contact' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "hidden shadow-xl lg:inline-block "}>
-          <span>Contact Us</span>
+        <a href="#Contact"><span>Contact Us</span></a>
         </Button>
         <IconButton
           variant="text"
@@ -121,7 +121,7 @@ export default function Example() {
       <MobileNav open={openNav}>
         {navList}
         <Button href='#Contact' variant="gradient" size="sm" fullWidth className="mb-2">
-          <span>Contact Us</span>
+          <a href="#Contact"><span>Contact Us</span></a>
         </Button>
       </MobileNav>
     </Navbar>
