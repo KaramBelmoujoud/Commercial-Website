@@ -35,7 +35,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#" className="flex items-center focus:underline underline-offset-8  decoration-4">
+        <a href="#" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
          Home
         </a>
       </Typography>
@@ -45,7 +45,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#AboutUs" className="flex items-center focus:underline underline-offset-8  decoration-4">
+        <a href="#AboutUs" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
         About Us
          
         </a>
@@ -56,7 +56,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#Products" className="flex items-center focus:underline underline-offset-8  decoration-4">
+        <a href="#Products" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
         Products
         </a>
       </Typography>
@@ -82,7 +82,7 @@ export default function Example() {
         </Button>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden content-between"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
