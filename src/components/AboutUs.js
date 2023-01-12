@@ -18,7 +18,7 @@ function AboutUs  ()  {
   }, [animation]);
 
   return (
-    <div  ref={ref} className="mx-auto max-w-7xl mb-24 " id="AboutUs" style={{ y: animation }}>
+    <div  ref={ref} className="mx-auto max-w-7xl mb-24 w-screen h-screen " id="AboutUs" style={{ y: animation }}>
       <h1 className="text-4xl font-bold my-10 mt-24 text-center"  >About Us</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <img src={azayz} alt='fish' className='h- mx-auto rounded-lg shadow-lg' />
