@@ -24,14 +24,14 @@ function Home() {
     <img src={pesca} alt="logo" className="h-64 w-52 absolute  mt-3 " />
     <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
       </div>
-      <ScrollContainer>
-    <Slidediv>
-    <ScrollPage><Entreheader /></ScrollPage>
-<AboutUs />
+      
+    <Slidediv><ScrollContainer>
+        <ScrollPage><Entreheader /></ScrollPage>
+        <AboutUs />
 <ContactUs />
    <Footer />
-        </Slidediv>
-      </ScrollContainer>
+       </ScrollContainer> </Slidediv>
+      
       </div>
 
 

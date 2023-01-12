@@ -8,7 +8,7 @@ function Entreheader() {
   return (
     <div className='relative  border-blue-500 border-b-4 '>
       <Example />
-      <Animator animation={batch(Fade(0.2,1))}>
+
     <div className='flex flex-col items-center   justify-center bg-fixed bg-no-repeat h-screen w-screen  bg-[url("/src/assets/sands.jpg")]'>
       <div className='text-center'>
         <h1 className='text-6xl '>Pescatitan</h1>
@@ -20,7 +20,7 @@ function Entreheader() {
           </a>
         
       </div>
-    </div></Animator>
+    </div>
     {window.innerWidth > 768 ? (
       <div className='top-4 left-14 absolute'>
         <img src={pesca} alt="logo" className="h-28 w-20 md:fixed invisible lg:visible" />
