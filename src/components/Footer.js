@@ -4,7 +4,7 @@ import Wave from 'react-wavify'
 
 function Footer() {
   return (
-    <div>
+    <div id='footer'>
         <Wave fill='#DCDCDC'
         paused={false}
         options={{

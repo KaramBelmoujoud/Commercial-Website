@@ -25,12 +25,16 @@ function Home() {
     <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
       </div>
       
-    <Slidediv><ScrollContainer>
-        <ScrollPage><Entreheader /></ScrollPage>
-        <AboutUs />
-<ContactUs />
-   <Footer />
-       </ScrollContainer> </Slidediv>
+    <Slidediv>
+      <ScrollContainer>
+        <ScrollPage>
+          <Entreheader />
+        </ScrollPage>
+          <AboutUs />
+          <ContactUs />
+          <Footer />
+      </ScrollContainer>
+    </Slidediv>
       
       </div>
 
