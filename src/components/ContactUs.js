@@ -28,7 +28,7 @@ const form = useRef();
   }
 
     return (
-              <div id="Contact" className='flex flex-col items-center justify-center max-w-full max-h-full lg:max-h-screen lg:max-h-screen bg-fixed bg-no-repeat bg-[url("/src/assets/sands.jpg")]'>
+              <div id="Contact" className='flex flex-col items-center justify-center max-w-full max-h-full lg:max-h-screen bg-fixed bg-no-repeat bg-[url("/src/assets/sands.jpg")]'>
 
         <div className='backdrop-blur-sm m-10 bg-white/30 box-content w-400 py-1 border-4 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 lg:hover:scale-105   hover:bg-white duration-300'>  
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mx-1 my-1 lg:gap-40 lg:mx-20 lg:my-10'>

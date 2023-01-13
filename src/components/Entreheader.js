@@ -1,9 +1,7 @@
 import React from 'react'
 import Example from '../components/Nav'
-import landing from '../assets/sands.jpg'
-import { Link } from 'react-router-dom'
+
 import pesca from '../assets/pes.png'
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 function Entreheader() {
   return (
     <div className='relative  border-blue-500 border-b-4 '>

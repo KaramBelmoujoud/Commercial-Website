@@ -1,7 +1,4 @@
 import React from 'react'
-import Example from '../components/Nav'
-import landing from '../assets/sands.jpg'
-import { Link } from 'react-router-dom'
 import styled, { keyframes } from "styled-components";
 import pesca from '../assets/pes.png'
 import { slideInUp } from 'react-animations'
@@ -9,7 +6,7 @@ import AboutUs from '../components/AboutUs';
 import ContactUs from '../components/ContactUs';
 import Footer from '../components/Footer';
 import Entreheader from '../components/Entreheader';
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+import { ScrollContainer, ScrollPage} from "react-scroll-motion";
 import Showprod from '../components/Showprod';
 const slideInUpAnimation = keyframes`${slideInUp}`
 
