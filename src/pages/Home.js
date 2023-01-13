@@ -10,6 +10,7 @@ import ContactUs from '../components/ContactUs';
 import Footer from '../components/Footer';
 import Entreheader from '../components/Entreheader';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+import Showprod from '../components/Showprod';
 const slideInUpAnimation = keyframes`${slideInUp}`
 
   const Slidediv = styled.div`
@@ -20,10 +21,10 @@ function Home() {
   
   return (
     <div className='overflow-hidden'>
-      <div className='flex justify-center content-center '>
-    <img src={pesca} alt="logo" className="h-64 w-52 absolute  mt-3 " />
+     <div className='flex justify-center content-center '>
+   <img src={pesca} alt="logo" className="h-64 w-52 absolute  mt-3 " />
     <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
-      </div>
+       </div>
       
     <Slidediv>
       <ScrollContainer>
@@ -31,11 +32,12 @@ function Home() {
           <Entreheader />
         </ScrollPage>
           <AboutUs />
+          <Showprod/>
           <ContactUs />
           <Footer />
       </ScrollContainer>
     </Slidediv>
-      
+    
       </div>
 
 
