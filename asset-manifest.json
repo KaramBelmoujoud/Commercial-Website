@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Pescatitan/static/css/main.cc381cf3.css",
-    "main.js": "/Pescatitan/static/js/main.0e26687f.js",
+    "main.js": "/Pescatitan/static/js/main.c1f8e286.js",
     "static/js/787.c497385f.chunk.js": "/Pescatitan/static/js/787.c497385f.chunk.js",
     "static/media/Sable.png": "/Pescatitan/static/media/Sable.ea222de7801840143c9f.png",
     "static/media/azayz.png": "/Pescatitan/static/media/azayz.2aac9f1f89928f160467.png",
@@ -43,11 +43,11 @@
     "static/media/image26.jpeg": "/Pescatitan/static/media/image26.a0dc7b655e1185ecec84.jpeg",
     "index.html": "/Pescatitan/index.html",
     "main.cc381cf3.css.map": "/Pescatitan/static/css/main.cc381cf3.css.map",
-    "main.0e26687f.js.map": "/Pescatitan/static/js/main.0e26687f.js.map",
+    "main.c1f8e286.js.map": "/Pescatitan/static/js/main.c1f8e286.js.map",
     "787.c497385f.chunk.js.map": "/Pescatitan/static/js/787.c497385f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc381cf3.css",
-    "static/js/main.0e26687f.js"
+    "static/js/main.c1f8e286.js"
   ]
 }
