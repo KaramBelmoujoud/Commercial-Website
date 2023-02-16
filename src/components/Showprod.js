@@ -18,7 +18,7 @@ function Showprod() {
                 <div className='flex flex-col items-center w-72  bg-cyan-500 border rounded-xl hover:scale-110 hover:translate-y-1 duration-300'>
                     <img src={prod.image} alt='' className='w-full h-full bg-white'/>
                     <h1 className='text-2xl'>{prod.name}</h1>
-                    <h1 className='text-2xl'>{prod.price}</h1>
+                    <h1 className='text-2xl'>{prod.nomlocal}</h1>
                 </div>
                 
             </div>

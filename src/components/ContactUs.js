@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import  product  from '../assets/data/products'
 
 
 function ContactForm() {
@@ -27,8 +28,9 @@ const form = useRef();
     setMessage('');
   }
 
-    return (
-              <div id="Contact" className='flex flex-col items-center justify-center max-w-full max-h-full lg:max-h-screen bg-fixed bg-no-repeat bg-[url("/src/assets/sands.jpg")]'>
+  return (
+      <div className='bg-cover bg-no-repeat h-screen w-screen bg-[url("/src/assets/Sable.png")]'>
+              <div id="Contact" className='flex flex-col items-center justify-center max-w-full h-full lg:max-h-screen '>
 
         <div className='backdrop-blur-sm m-10 bg-white/30 box-content w-400 py-1 border-4 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 lg:hover:scale-105   hover:bg-white duration-300'>  
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mx-1 my-1 lg:gap-40 lg:mx-20 lg:my-10'>
@@ -91,10 +93,12 @@ const form = useRef();
           value={item}
           onChange={event => setItem(event.target.value)}
         >
-          <option value="">--- Select a product ---</option>
-          <option value="item1">Item 1</option>
-          <option value="item2">Item 2</option>
-          <option value="item3">Item 3</option>
+                      <option value="">--- Select a product ---</option>
+                      {product.map((prod) => {
+                        return (
+                          <option value="item1">{prod.name}</option>
+                        )
+                      })}
         </select>
         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
           <svg
@@ -139,7 +143,7 @@ const form = useRef();
                     </form>
      </div>
           </div>
-          </div>
+          </div></div>
   );
 }
 

@@ -65,7 +65,7 @@ export default function Example() {
   );
  
   return (
-    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 rounded-lg':' lg:mt-10 backdrop-blur-sm bg-white/30 w-full left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10 rounded-lg'}>
+    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 rounded-lg':' lg:mt-10 backdrop-blur-sm text-slate-800 bg-slate-50 w-full left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10 rounded-lg'}>
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -77,7 +77,7 @@ export default function Example() {
         </Typography>
         
         <div className="hidden lg:block">{navList}</div>
-        <Button href='#Contact' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "hidden shadow-xl lg:inline-block "}>
+        <Button href='#Contact' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
         <a href="#Contact"><span>Contact Us</span></a>
         </Button>
         <IconButton
