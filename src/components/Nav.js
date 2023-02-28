@@ -8,15 +8,18 @@ import {
 } from "@material-tailwind/react";
 import pesca from "../assets/pes.png";
  
-export default function Example() {
+export default function Example(obj) {
   const [openNav, setOpenNav] = useState(false);
   const [colorChange, setColorchange] = useState(false);
+  const [hidobject, sethide] = useState(false);
   const changeNavbarColor = () =>{
     if(window.scrollY >= 500){
       setColorchange(true);
+      sethide(true);
     }
     else{
       setColorchange(false);
+      sethide(false);
     }
  };
  window.addEventListener('scroll', changeNavbarColor);
@@ -27,7 +30,9 @@ export default function Example() {
     );
   }, []);
   const contlang = (
-    <div className="flex flex-col gap-2 bg-white "></div>
+    <div className="flex flex-col gap-2 bg-blue-400 h-14 relative">
+
+    </div>
   );
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -67,7 +72,9 @@ export default function Example() {
   );
  
   return (
-    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 rounded-lg':' lg:mt-10 backdrop-blur-sm text-slate-800 bg-slate-50 w-full left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10 rounded-lg'}>
+    <div>
+      <div className={hidobject ? 'hidden' : 'hidden lg:block'}>{contlang}</div>
+    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 rounded-lg':' backdrop-blur-sm text-slate-800 bg-slate-50 w-full left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10 rounded-lg'}>
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -77,7 +84,7 @@ export default function Example() {
         >
           <span>Pescatitan</span>
         </Typography>
-        
+
         <div className="hidden lg:block">{navList}</div>
         <Button href='#Contact' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
         <a href="#Contact"><span>Contact Us</span></a>
@@ -126,6 +133,7 @@ export default function Example() {
           <a href="#Contact"><span>Contact Us</span></a>
         </Button>
       </MobileNav>
-    </Navbar>
+      </Navbar>
+      </div>
   );
 }

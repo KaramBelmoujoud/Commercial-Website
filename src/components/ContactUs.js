@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import  product  from '../assets/data/products'
+import product from '../assets/data/products'
+import pesca from '../assets/pesca.png'
+import Example from './Nav';
+import { useLocation } from 'react-router-dom';
 
 
 function ContactForm() {
@@ -26,10 +29,15 @@ const form = useRef();
     setName('');
     setEmail('');
     setMessage('');
-  }
 
+  }
+ 
   return (
-      <div className='bg-cover bg-no-repeat h-screen w-screen bg-[url("/src/assets/Sable.png")]'>
+    <div className='bg-cover bg-no-repeat h-screen w-screen bg-[url("/src/assets/Sable.png")]'>
+      <Example/>
+      <div className='flex flex-col absolute items-center justify-center left-0 right-0 top-0 bottom-0 '>
+        <img src={pesca} alt="logo" className="visible" />
+                </div> 
               <div id="Contact" className='flex flex-col items-center justify-center max-w-full h-full lg:max-h-screen '>
 
         <div className='backdrop-blur-sm m-10 bg-white/30 box-content w-400 py-1 border-4 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 lg:hover:scale-105   hover:bg-white duration-300'>  

@@ -1,7 +1,7 @@
 const product = [
  {
   "id": 1,
-  "name": "grondeur métis | ronfleur",
+  "name": "Grondeur métis | ronfleur",
   "nomlocal": "Chekhar | Roncador",
   "image": require("../image1.jpeg")
  },
@@ -25,7 +25,7 @@ const product = [
  },
  {
   "id": 5,
-  "name": "sabre",
+  "name": "Sabre",
   "nomlocal": "Samta|sif | Sable",
   "image": require("../image5.jpeg")
  },
@@ -37,25 +37,25 @@ const product = [
  },
  {
   "id": 7,
-  "name": "Faux saint pierre | saint pierre argenté",
+  "name": "Faux saint pierre | Saint pierre argenté",
   "nomlocal": "Faux saint pierre | saint pierre argenté",
   "image": require("../image7.png")
  },
  {
   "id": 8,
-  "name": "sole",
+  "name": "Sole",
   "nomlocal": "Hout-moussa,",
   "image": require("../image8.jpeg")
  },
  {
   "id": 9,
-  "name": "congre",
+  "name": "Congre",
   "nomlocal": "Sennour | lfarkh | Sighar | congrio",
   "image": require("../image9.jpeg")
  },
  {
   "id": 10,
-  "name": "mulet",
+  "name": "Mulet",
   "nomlocal": "Bouri | mulet | cabezote",
   "image": require("../image10.jpeg")
  },
@@ -67,37 +67,37 @@ const product = [
  },
  {
   "id": 12,
-  "name": "Merlu| colin",
+  "name": "Merlu | colin",
   "nomlocal": "Peckhota (petite taille jusqu’à 15 cm)",
   "image": require("../image12.jpeg")
  },
  {
    "id": 13,
-   "name": "Merlu| colin",
+   "name": "Merlu | colin",
   "nomlocal": "Pescadilla (taille moyenne jusqu’à 30 cm)",
   "image": require("../image12.jpeg")
  },
  {
    "id": 14,
-   "name": "Merlu| colin",
+   "name": "Merlu | colin",
   "nomlocal": "Merluza (grande taille)",
   "image": require("../image12.jpeg")
  },
  {
   "id": 15,
-  "name": "merlan",
+  "name": "Merlan",
   "nomlocal": "merlan",
   "image": require("../image13.jpeg")
  },
  {
   "id": 16,
-  "name": "chinchard",
+  "name": "Chinchard",
   "nomlocal": "cheran | Jurel",
   "image": require("../image14.jpeg")
  },
  {
   "id": 17,
-  "name": "pagre",
+  "name": "Pagre",
   "nomlocal": "Pargo | twinba",
   "image": require("../image15.jpeg")
  },
@@ -121,19 +121,19 @@ const product = [
  },
  {
   "id": 21,
-  "name": "uranoscope",
+  "name": "Uranoscope",
   "nomlocal": "Rata | tobba",
   "image": require("../image19.jpeg")
  },
  {
   "id": 22,
-  "name": "raie",
+  "name": "Raie",
   "nomlocal": "raya",
   "image": require("../image20.jpeg")
  },
  {
   "id": 23,
-  "name": "Ombrine| chevrette",
+  "name": "Ombrine | chevrette",
   "nomlocal": "Maâza | verrugato",
   "image": require("../image21.jpeg")
  },
@@ -157,7 +157,7 @@ const product = [
  },
  {
   "id": 27,
-  "name": "requin",
+  "name": "Requin",
   "nomlocal": "Chien de mer | Cazon |Kalb",
   "image": require("../image25.jpeg")
  },
@@ -169,7 +169,7 @@ const product = [
  },
  {
   "id": 29,
-  "name": "palomine",
+  "name": "Palomine",
   "nomlocal": "Liche | aoulah | pompano",
   "image": require("../image27.jpeg")
  },
@@ -217,7 +217,7 @@ const product = [
  },
  {
   "id": 37,
-  "name": "maquereau",
+  "name": "Maquereau",
   "nomlocal": "Cabayla | Zaroug",
   "image": require("../image35.jpeg")
  },
@@ -259,25 +259,25 @@ const product = [
  },
  {
   "id": 44,
-  "name": "crevette rose",
+  "name": "Crevette rose",
   "nomlocal": "crevette rose | Kemroun",
   "image": require("../image42.jpeg")
  },
  {
   "id": 45,
-  "name": "crevette royale",
+  "name": "Crevette royale",
   "nomlocal": "Gamba | Kemroun",
   "image": require("../image43.png")
  },
  {
   "id": 46,
-  "name": "langoustine",
+  "name": "Langoustine",
   "nomlocal": "Langoustine | Cigala",
   "image": require("../image44.jpeg")
  },
  {
   "id": 47,
-  "name": "seiche",
+  "name": "Seiche",
   "nomlocal": "- Sepia",
   "image": require("../image45.png")
  },

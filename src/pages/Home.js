@@ -24,7 +24,7 @@ function Home() {
        </div>  
           <Entreheader />
           <AboutUs />
-          <Showprod/>
+          
           {/* <ContactUs /> */}
           <Footer />
       </div>
