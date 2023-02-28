@@ -21,20 +21,12 @@ function Home() {
      <div className='flex justify-center content-center '>
    <img src={pesca} alt="logo" className="h-64 w-52 absolute  mt-3 " />
     <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
-       </div>
-      
-    <Slidediv>
-      <ScrollContainer>
-        <ScrollPage>
+       </div>  
           <Entreheader />
-        </ScrollPage>
           <AboutUs />
           <Showprod/>
-          <ContactUs />
+          {/* <ContactUs /> */}
           <Footer />
-      </ScrollContainer>
-    </Slidediv>
-    
       </div>
 
 
