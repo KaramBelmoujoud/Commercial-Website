@@ -26,7 +26,9 @@ export default function Example() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
- 
+  const contlang = (
+    <div className="flex flex-col gap-2 bg-white "></div>
+  );
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
