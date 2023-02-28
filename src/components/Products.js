@@ -34,7 +34,7 @@ function Products() {
   }, []);
     return (
         
-        <div className='relative border-b-4 '>
+        <div className='relative border-b-4'>
             <ScrollToTop smooth className='rounded-full' component={<p style={{ color: "blue" }}>UP</p>}/>
         <Example/>
             <div className='bg-cover bg-no-repeat h-96 w-screen bg-[url("/src/assets/Sable.png")]'>
@@ -52,10 +52,10 @@ function Products() {
         </div>
                 {window.innerWidth > 768 ? (<div>
       <div className='top-10 left-16 absolute'>
-        <img src={pesca} alt="logo" className="scale-75 invisible lg:visible" />
+        <img src={pesca} alt="logo" className="scale-75 invisible 2xl:visible" />
                 </div> 
                 <div className='top-20 right-28 absolute'>
-          <img src={prem} alt="logo" className=" invisible lg:visible" />          
+          <img src={prem} alt="logo" className=" invisible 2xl:visible" />          
                 </div>
             </div>) : (null)}
             <Showprod />

@@ -9,7 +9,7 @@ function Showprod() {
     <div id='Products' className="items-center justify-center max-h-full lg:max-h-full">
         <h1 className="text-4xl font-bold my-10 mt-24 text-center"  >Products</h1>
     <div className='max-w-fit mx-auto'>
-    <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-60 gap-y-10  justify- mb-14'>
+    <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-20 2xl:gap-x-56 gap-y-10 justify- mb-14'>
 
         {product.map((prod) => {
             
@@ -22,7 +22,7 @@ function Showprod() {
             //     </div>
                 
             // </div>
-            <div class="max-w-sm rounded overflow-hidden h-auto shadow-2xl border-2">
+            <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg">
   <img class="w-full" src={prod.image} alt="Sunset in the mountains"/>
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">{prod.name}</div>
