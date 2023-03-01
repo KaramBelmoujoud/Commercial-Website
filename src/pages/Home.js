@@ -7,6 +7,7 @@ import AboutUs from '../components/AboutUs';
 import Carousel from 'react-material-ui-carousel'
 import Footer from '../components/Footer';
 import Entreheader from '../components/Entreheader';
+import Services from '../components/services';
 
 
 
@@ -59,6 +60,7 @@ function Home() {
        </div>  
           <Entreheader />
           <AboutUs />
+          <Services />
           <div className='left-96 right-96'>
           <Carousel navButtonsAlwaysVisible='true'>
           {
