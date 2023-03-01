@@ -20,7 +20,7 @@ const product = [
  {
   "id": 4,
   "name": "Denté",
-  "nomlocal": "Denton |",
+  "nomlocal": "Denton",
   "image": require("../image4.jpeg")
  },
  {
@@ -32,7 +32,7 @@ const product = [
  {
   "id": 6,
   "name": "Saint pierre",
-  "nomlocal": "Moussa |",
+  "nomlocal": "Moussa",
   "image": require("../image6.jpeg")
  },
  {
