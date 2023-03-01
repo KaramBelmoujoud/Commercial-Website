@@ -12,6 +12,8 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+import i18next from "i18next";
  
 export default function Example() {
   const { t } = useTranslation();
@@ -38,22 +40,38 @@ export default function Example() {
     );
   }, []);
 
-  const language = [{ "id":"En"}, {"id":"Fr"}, {"id":"Gr"}, {"id":"Sp", }];
+  const language = [
+    {
+      "id": "en",
+      "code":"gb"
+    },
+    {
+      "id": "fr",
+      "code":"fr"
+    },
+    {
+      "id": "gr",
+      "code":"de"
+    },
+    {
+      "id": "sp",
+      "code":"es"
+    }];
 
   const contlang = (
     <div className="flex flex-col gap-5 bg-gray-800 h-12 z-50 ">
       <div className="flex flex-1 ml-64 mr-64 justify-center">
         <div className="flex flex-1"><h2 className="font-serif  p-3 text-white"><EmailOutlinedIcon fontSize="small" /> farid@pescatitan.net</h2>
           <h2 className="font-serif py-3 mx-4 text-white"><LocalPhoneOutlinedIcon fontSize="small" />  +212 661281000</h2></div>
-        <div className="bg-gray-800 mt-2 h-8 z-50">
+        <div className="bg-gray-800 mt-2 h-8 z-50 w-36">
           <div onClick={()=> setOpen(!open)}>
           <KeyboardArrowDownOutlinedIcon fontSize="small" sx={{ color: "white" }}/>
             <LanguageOutlinedIcon fontSize="large" sx={{ color: "white" }} />
           </div>
-          <ul className={open ? 'bg-gray-800 mt-2 overflow-y-auto max-h-52 shadow-md rounded-md' : 'bg-gray-800 mt-2 overflow-y-auto max-h-0'} >
+          <ul className={open ? 'bg-gray-800 overflow-y-auto max-h-52 shadow-md rounded-md' : 'bg-gray-800 mt-2 overflow-y-auto max-h-0'} >
             {
               language.map((country) =>
-                <li key={country.id} className="p-2 text-sm z-auto text-black bg-gray-200 hover:bg-black hover:text-white ">{t(country.id)}</li>
+                <li key={country.id} className="p-2 text-sm z-auto text-black bg-gray-200 hover:bg-black hover:text-white" onClick={() => { i18next.changeLanguage(country.id); setOpen(!open) }}><span class={`fi fi-${country.code} mx-2`}></span>{t(country.id)}</li>
               )
             }
           </ul>
