@@ -5,6 +5,8 @@ import Wave from 'react-wavify'
 import pescal from '../assets/pescalong.png'
 import { phone } from '../phone.svg'
 import { useTranslation } from 'react-i18next';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 function Footer() {
     const { t } = useTranslation();
@@ -49,8 +51,8 @@ function Footer() {
             <div className='flex flex-row flex-col items-center justify-start pt-6'>
                   <h2 className='text-3xl text-white mr-10 mt-10'>{t('Contactus')}</h2>
                   <h3 className='text-1xl text-white w-80 pt-5'>{t('Description')}</h3>
-                  <h3 className='text-1xl text-white w-80 pt-2'>+212 673653203</h3>
-                  <h3 className='text-1xl text-white w-80 pt-1'>farid@pescatitan.net</h3>
+                  <h3 className='text-1x3 text-white w-80 pt-2'><LocalPhoneOutlinedIcon fontSize="small"/>+212 673653203</h3>
+                  <h3 className='text-1x3 text-white w-80 pt-1'><EmailOutlinedIcon fontSize="small"/> farid@pescatitan.net</h3>
                   <img src={pescal} alt="logo" className="scale-50 invisible 2xl:visible absolute left-0" />
                   <div className="right-72 mt-20 absolute">
                       <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="email">

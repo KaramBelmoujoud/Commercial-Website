@@ -31,6 +31,11 @@ i18n
           "Email": "Email",
           "Message": "Message",
           "Contact": "If you need information about our products or want to get in touch, you can either fill out the form with your request or find our contact information.",
+          "En": "English",
+          "Fr": "French",
+          "Gr": "German",
+          "Sp": "Spanish",
+        
         },
       },
         fr: {
@@ -49,6 +54,10 @@ i18n
             "Email": "Email",
             "Message": "Message",
             "Contact": "Si vous avez besoin d'informations sur nos produits ou souhaitez nous contacter, vous pouvez soit remplir le formulaire avec votre demande, soit trouver nos coordonnées.",
+            "En": "Anglais",
+            "Fr": "Français",
+            "Gr": "Allemand",
+            "Sp": "Espagnol",
           },
         },
         gr: {
@@ -67,6 +76,10 @@ i18n
             "Email": "Email",
             "Message": "Botschaft",
             "Contact": "Wenn Sie Informationen zu unseren Produkten benötigen oder uns kontaktieren möchten, können Sie entweder das Formular mit Ihrer Anfrage ausfüllen oder unsere Kontaktdaten finden.",
+            "En": "Englisch",
+            "Fr": "Französisch",
+            "Gr": "Deutsch",
+            "Sp": "Spanisch",
           }
       },
       sp: {
@@ -85,7 +98,11 @@ i18n
           "Email": "Email",
           "Message": "Mensaje",
           "Contact": "Si necesita información sobre nuestros productos o desea ponerse en contacto, puede completar el formulario con su solicitud o encontrar nuestra información de contacto.",
-          }
+          "En": "En inglés",
+          "Fr": "francés",
+          "Gr": "alemán",
+          "Sp": "español",          
+        }
         }
     },
     

@@ -3,8 +3,9 @@ import emailjs from '@emailjs/browser';
 import product from '../assets/data/products'
 import pesca from '../assets/pesca.png'
 import Example from './Nav';
-import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 
 function ContactForm() {
@@ -35,7 +36,7 @@ const { t } = useTranslation();
   }
  
   return (
-    <div className='bg-cover bg-no-repeat h-screen w-screen bg-[url("/src/assets/Sable.png")]'>
+    <div className='bg-cover bg-no-repeat h-screen w-screen bg-[url("/src/assets/Sable.png")] z-0 overflow-hidden'>
       <Example/>
       <div className='flex flex-col absolute items-center justify-center left-0 right-0 top-0 bottom-0 '>
         <img src={pesca} alt="logo" className="visible" />
@@ -48,9 +49,9 @@ const { t } = useTranslation();
               <h1 className='text-center lg:text-left pt-2 lg:mt-20 text-lg lg:text-6xl font-bold text-sky-900'>{t('Contactus')}</h1>
                 <br/>
               <h2 className='mt-5 text-justify ml-2 max-w-md '>{t('Contact')}</h2>
-              <h2 className='mt-5 text-justify ml-2 max-w-md '>+212 661281000</h2>
-              <h2 className='mt-5 text-justify ml-2 max-w-md '>farid@pescatitan.net</h2>
-              
+              <h2 className='mt-5 text-justify ml-2 max-w-md '><EmailOutlinedIcon fontSize="small"/> farid@pescatitan.net</h2>
+              <h2 className='mt-5 text-justify ml-2 max-w-md '><LocalPhoneOutlinedIcon fontSize="small"/>+212 661281000</h2>
+
               </div> 
     <form ref={form}
       onSubmit={handleSubmit}

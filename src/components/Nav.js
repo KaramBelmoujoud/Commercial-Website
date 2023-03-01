@@ -8,12 +8,18 @@ import {
 } from "@material-tailwind/react";
 import pesca from "../assets/pes.png";
 import { useTranslation } from "react-i18next";
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
  
 export default function Example() {
   const { t } = useTranslation();
   const [openNav, setOpenNav] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const [hidobject, sethide] = useState(false);
+  const [open, setOpen] = useState(false);
+
   const changeNavbarColor = () =>{
     if(window.scrollY >= 35){
       setColorchange(true);
@@ -31,12 +37,27 @@ export default function Example() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
+
+  const language = [{ "id":"En"}, {"id":"Fr"}, {"id":"Gr"}, {"id":"Sp", }];
+
   const contlang = (
-    <div className="flex flex-col gap-2 bg-blue-300 h-12 relative">
-      <div className="mx-60 flex flex-row">
-      <h2 className="items-center justify-center left-20 bg-blue-200 p-3">Email : farid@pescatitan.net</h2>
-      <h2 className="items-center justify-center left-64 py-3 mx-4">Tel : +212 661281000</h2>
-      
+    <div className="flex flex-col gap-5 bg-gray-800 h-12 z-50 ">
+      <div className="flex flex-1 ml-64 mr-64 justify-center">
+        <div className="flex flex-1"><h2 className="font-serif  p-3 text-white"><EmailOutlinedIcon fontSize="small" /> farid@pescatitan.net</h2>
+          <h2 className="font-serif py-3 mx-4 text-white"><LocalPhoneOutlinedIcon fontSize="small" />  +212 661281000</h2></div>
+        <div className="bg-gray-800 mt-2 h-8 z-50">
+          <div onClick={()=> setOpen(!open)}>
+          <KeyboardArrowDownOutlinedIcon fontSize="small" sx={{ color: "white" }}/>
+            <LanguageOutlinedIcon fontSize="large" sx={{ color: "white" }} />
+          </div>
+          <ul className={open ? 'bg-gray-800 mt-2 overflow-y-auto max-h-52 shadow-md rounded-md' : 'bg-gray-800 mt-2 overflow-y-auto max-h-0'} >
+            {
+              language.map((country) =>
+                <li key={country.id} className="p-2 text-sm z-auto text-black bg-gray-200 hover:bg-black hover:text-white ">{t(country.id)}</li>
+              )
+            }
+          </ul>
+        </div>
       </div>
     </div>
   );
@@ -48,7 +69,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="/" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
+        <a href="/" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
           {t('home')}
         </a>
       </Typography>
@@ -58,7 +79,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="/#AboutUs" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
+        <a href="/#AboutUs" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
           {t('about_us_title')}
          
         </a>
@@ -69,7 +90,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="Products" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
+        <a href="Products" className="flex items-center focus:underline underline-offset-8  scroll-auto font-serif">
           {t('product')}
         </a>
       </Typography>
@@ -88,12 +109,12 @@ export default function Example() {
           variant="h1"
           className=" cursor-pointer py-1.5 font-medium text-blue-gray-400 hover:text-blue-gray-900"
         >
-          <span>Pescatitan</span>
+          <span className="font-serif">PESCATITAN</span>
         </Typography>
 
         <div className="hidden lg:block">{navList}</div>
         <Button href='Contactus' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
-            <a href="Contactus"><span>{t('Contactus')}</span></a>
+            <a href="Contactus"><span className="font-serif">{t('Contactus')}</span></a>
         </Button>
         <IconButton
           variant="text"
@@ -134,9 +155,9 @@ export default function Example() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-        {navList}
+          {navList}
         <Button href='Contactus' variant="gradient" size="sm" fullWidth className="mb-2">
-          <a href="Contactus"><span>{t('Contactus')}</span></a>
+          <a href="Contactus"><span className="font-serif">{t('Contactus')}</span></a>
         </Button>
       </MobileNav>
       </Navbar>
