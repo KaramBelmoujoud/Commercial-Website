@@ -21,7 +21,7 @@ function Entreheader() {
         </div>
       </div>
     {window.innerWidth > 768 ? (
-      <div className='top-4 left-14 absolute'>
+      <div className='top-14 left-14 absolute'>
         <img src={pesca} alt="logo" className="h-28 w-20 md:fixed invisible lg:visible" />
       </div>) : (null)}
   </div>

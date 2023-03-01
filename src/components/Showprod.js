@@ -6,8 +6,8 @@ function Showprod() {
     console.log(product);
     
   return (
-    <div id='Products' className="items-center justify-center max-h-full lg:max-h-full">
-        <h1 className="text-4xl font-bold my-10 mt-24 text-center"  >Products</h1>
+    <div id='Products' className="items-center justify-center max-h-full lg:max-h-full pt-28">
+        {/* <h1 className="text-4xl font-bold my-10 mt-24 text-center"  >Products</h1> */}
     <div className='max-w-fit mx-auto'>
     <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-20 2xl:gap-x-56 gap-y-10 justify- mb-14'>
 

@@ -7,13 +7,15 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import pesca from "../assets/pes.png";
+import { useTranslation } from "react-i18next";
  
-export default function Example(obj) {
+export default function Example() {
+  const { t } = useTranslation();
   const [openNav, setOpenNav] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const [hidobject, sethide] = useState(false);
   const changeNavbarColor = () =>{
-    if(window.scrollY >= 500){
+    if(window.scrollY >= 35){
       setColorchange(true);
       sethide(true);
     }
@@ -30,8 +32,12 @@ export default function Example(obj) {
     );
   }, []);
   const contlang = (
-    <div className="flex flex-col gap-2 bg-blue-400 h-14 relative">
-
+    <div className="flex flex-col gap-2 bg-blue-300 h-12 relative">
+      <div className="mx-60 flex flex-row">
+      <h2 className="items-center justify-center left-20 bg-blue-200 p-3">Email : farid@pescatitan.net</h2>
+      <h2 className="items-center justify-center left-64 py-3 mx-4">Tel : +212 661281000</h2>
+      
+      </div>
     </div>
   );
   const navList = (
@@ -42,8 +48,8 @@ export default function Example(obj) {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
-         Home
+        <a href="/" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
+          {t('home')}
         </a>
       </Typography>
       <Typography
@@ -52,8 +58,8 @@ export default function Example(obj) {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#AboutUs" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
-        About Us
+        <a href="/#AboutUs" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
+          {t('about_us_title')}
          
         </a>
       </Typography>
@@ -63,8 +69,8 @@ export default function Example(obj) {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="#Products" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
-        Products
+        <a href="Products" className="flex items-center focus:underline underline-offset-8  decoration-4 scroll-auto">
+          {t('product')}
         </a>
       </Typography>
       
@@ -86,8 +92,8 @@ export default function Example(obj) {
         </Typography>
 
         <div className="hidden lg:block">{navList}</div>
-        <Button href='#Contact' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
-        <a href="#Contact"><span>Contact Us</span></a>
+        <Button href='Contactus' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
+            <a href="Contactus"><span>{t('Contactus')}</span></a>
         </Button>
         <IconButton
           variant="text"
@@ -129,8 +135,8 @@ export default function Example(obj) {
       </div>
       <MobileNav open={openNav}>
         {navList}
-        <Button href='#Contact' variant="gradient" size="sm" fullWidth className="mb-2">
-          <a href="#Contact"><span>Contact Us</span></a>
+        <Button href='Contactus' variant="gradient" size="sm" fullWidth className="mb-2">
+          <a href="Contactus"><span>{t('Contactus')}</span></a>
         </Button>
       </MobileNav>
       </Navbar>

@@ -29,7 +29,7 @@ function AboutUs() {
       <img src={azayz} alt='fish' className='h- mx-auto rounded-lg shadow-lg' />
       <div >
     <p className=" text-lg li text-justify p-5">{t('about_us')}<br></br><br></br></p>
-    <p className='text-center text-lg'><b className='text-blue-500'>thank you for choosing us!.</b></p>
+              <p className='text-center text-lg'><b className='text-blue-500'>{t("thankyou")}</b></p>
       </div>
       </div>
               <h2 className="text-4xl font-bold my-10 mt- text-center">{t('our_mission_title')}</h2>

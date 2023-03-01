@@ -4,6 +4,7 @@ import product from '../assets/data/products'
 import pesca from '../assets/pesca.png'
 import Example from './Nav';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 function ContactForm() {
@@ -12,8 +13,9 @@ function ContactForm() {
     const [message, setMessage] = useState('');
     const [item, setItem] = useState('');
 const form = useRef();
-
+const { t } = useTranslation();
   function handleSubmit(event) {
+    
       event.preventDefault();
       emailjs.sendForm('service_i2zgrvg', 'template_sannr9g', form.current, 'ylRhxG10u7hKpO6KH')
       .then((result) => {
@@ -43,9 +45,12 @@ const form = useRef();
         <div className='backdrop-blur-sm m-10 bg-white/30 box-content w-400 py-1 border-4 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 lg:hover:scale-105   hover:bg-white duration-300'>  
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mx-1 my-1 lg:gap-40 lg:mx-20 lg:my-10'>
               <div className='shrink'>
-                <h1 className='text-center lg:text-left pt-2 lg:mt-20 text-lg lg:text-6xl font-bold text-sky-900'>Contact Us</h1>
+              <h1 className='text-center lg:text-left pt-2 lg:mt-20 text-lg lg:text-6xl font-bold text-sky-900'>{t('Contactus')}</h1>
                 <br/>
-              <h2 className='mt-5 text-justify ml-2 max-w-md '>If you need information about our products or want to get in touch, you can either fill out the form with your request or find our <a href='' className='text-sky-700'>contact information</a></h2>
+              <h2 className='mt-5 text-justify ml-2 max-w-md '>{t('Contact')}</h2>
+              <h2 className='mt-5 text-justify ml-2 max-w-md '>+212 661281000</h2>
+              <h2 className='mt-5 text-justify ml-2 max-w-md '>farid@pescatitan.net</h2>
+              
               </div> 
     <form ref={form}
       onSubmit={handleSubmit}
@@ -57,7 +62,7 @@ const form = useRef();
             className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="name"
           >
-            Name
+                    {t('Name')}
           </label>
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -73,7 +78,7 @@ const form = useRef();
             className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="email"
           >
-            Email
+                    {t('Email')}
           </label>
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -91,7 +96,7 @@ const form = useRef();
         className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
         htmlFor="item"
       >
-        Products
+                    {t('product')}
       </label>
       <div className="relative">
         <select
@@ -128,7 +133,7 @@ const form = useRef();
             className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
             htmlFor="message"
           >
-            Message
+                    {t('Message')}
           </label>
           <textarea
             className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-1 mb-1 lg:py-3 lg:px-4 lg:mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48"
