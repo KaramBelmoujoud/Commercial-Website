@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { keyframes } from "styled-components";
 import  product  from '../assets/data/products'
 import pesca from '../assets/pes.png'
@@ -8,8 +8,6 @@ import Carousel from 'react-material-ui-carousel'
 import Footer from '../components/Footer';
 import Entreheader from '../components/Entreheader';
 import Services from '../components/services';
-
-
 
 
 function Home() {
@@ -54,6 +52,7 @@ function Home() {
   
   return (
     <div className='overflow-hidden'>
+      
      <div className='flex justify-center content-center '>
    <img src={pesca} alt="logo" className="h-64 w-52 absolute  mt-9 " />
     <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
