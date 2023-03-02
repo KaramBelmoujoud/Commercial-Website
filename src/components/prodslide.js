@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import Carousel from 'react-material-ui-carousel'
 
 function Prodslide() {
+  const { t } = useTranslation();
     const slides = [
         {
           image: require("../assets/image4.jpeg"),
@@ -43,7 +45,7 @@ function Prodslide() {
     
   return (
     <div>
-          <h1 className="text-4xl font-bold  text-center" >Products</h1>
+      <h1 className="text-4xl font-bold  text-center" >{t('product')}</h1>
     <div className='left-96 right-96 my-14'>
     <Carousel navButtonsAlwaysVisible='true'>
     {
@@ -60,7 +62,7 @@ function Prodslide() {
           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{prod.description}</span>
         </div>
         {
-            prod == slides[5]  ?   <p className=' text-end mb-5 mr-3 underline'><a href='/Products'>more ...</a></p> : null           
+          prod == slides[5] ? <p className=' text-end mb-5 lg:mr-3 mr-12 underline'><a href='/Products'>{t('mr')}</a></p> : null           
         }
       </div>
       

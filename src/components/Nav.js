@@ -113,6 +113,56 @@ export default function Example() {
         </a>
       </Typography>
       
+      
+    </ul>
+  );
+    const pnavList = (
+    <ul className="mb-10 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-semibold"
+      >
+        <a href="/" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
+          {t('home')}
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-semibold"
+      >
+        <a href="/#AboutUs" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
+          {t('about_us_title')}
+         
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-semibold"
+      >
+        <a href="Products" className="flex items-center focus:underline underline-offset-8  scroll-auto font-serif">
+          {t('product')}
+        </a>
+      </Typography>
+      <div className="mt-2 h-8 z-50 w-36">
+          <div onClick={()=> setOpen(!open)}>
+          <KeyboardArrowDownOutlinedIcon fontSize="small" sx={{ color: "black" }}/>
+            <LanguageOutlinedIcon fontSize="large" sx={{ color: "black" }} />
+          </div>
+          <ul className={open ? ' overflow-y-auto max-h-52 shadow-md rounded-md z-50' : 'mt-2 overflow-y-auto max-h-0'} >
+            {
+              language.map((country) =>
+                <li key={country.id} className="p-2 text-sm z-auto text-black bg-gray-200 hover:bg-black hover:text-white" onClick={() => { i18next.changeLanguage(country.id); setOpen(!open) }}><span class={`fi fi-${country.code} mx-2`}></span>{t(country.id)}</li>
+              )
+            }
+          </ul>
+        </div>
+      
     </ul>
   );
  
@@ -173,7 +223,7 @@ export default function Example() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-          {navList}
+          {pnavList}
         <Button href='Contactus' variant="gradient" size="sm" fullWidth className="mb-2">
           <a href="Contactus"><span className="font-serif">{t('Contactus')}</span></a>
         </Button>

@@ -59,11 +59,14 @@ function Footer() {
             <h3 className='text-1x3 text-white w-80 pt-2'><LocalPhoneOutlinedIcon fontSize="small"/>+212 673653203</h3>
             <h3 className='text-1x3 text-white w-80 pt-1'><EmailOutlinedIcon fontSize="small"/> farid@pescatitan.net</h3>
           </div>   
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 ">
+            <div>
             <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="email">
               {t('sub')}
-            </label>
-            <input
+              </label>
+            </div>
+            <div>
+              <input
               className="appearance-none block w-80 bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="email"
               type="email"
@@ -71,8 +74,10 @@ function Footer() {
               value={email}
               placeholder='Email'
               onChange={event => setEmail(event.target.value)}
-            />
-            <div className='bg-white w-24'><Button className="p-4 text-sm z-auto text-white bg-transparent hover:bg-black hover:text-white">{t('sub')}</Button></div>
+            /></div>
+            <div className='bg-blue-200 rounded-md hover:bg-black w-24 justify-center items-center'>
+              <Button className="p-4 text-sm z-auto text-white bg-transparent hover:bg-black hover:text-white">{t('sub')}</Button>
+            </div>
             
           </div> 
           

@@ -17,7 +17,7 @@ function Products() {
         <div className='relative border-b-4 overflow-x-hidden'>
             <ScrollToTop smooth className='rounded-full flex justify-center items-center shadow-xl' component={<MySVG fill="black"/>}/>
         <Example/>
-            <div className='bg-cover bg-no-repeat h-96 w-screen bg-[url("/src/assets/Sable.png")]'>
+            <div className='bg-cover bg-no-repeat mt-12 lg:mt-0 h-96 w-screen bg-[url("/src/assets/Sable.png")]'>
                     <div className='flex flex-col items-center justify-center h-full'>
       <div className='text-center top-10'>
               <h1 className='text-6xl text-blue-400'>{t('We')}</h1>

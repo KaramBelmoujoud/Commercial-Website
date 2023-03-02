@@ -10,8 +10,8 @@ function Services() {
     const { t } = useTranslation();
   return (
     <div className='mt-10'>
-      <h1 className="text-4xl font-bold  text-center"  >Services and Advantages</h1>
-    <div className='bg-cover bg-no-repeat h-screen  bg-[url("/src/assets/Untitled.png")] m-28 mt-10 p-24'>
+      <h1 className="text-4xl font-bold  text-center"  >{t('sv')}</h1>
+    <div className='bg-cover bg-no-repeat h-screen shadow-2xl bg-[url("/src/assets/Untitled.png")] m-28 mt-10 p-24'>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 h-full '>
         <div className='bg-white shadow-lg rounded-lg h-auto p-8 hover:shadow-lg hover:shadow-blue-700/50 transition ease-linear delay-200'>

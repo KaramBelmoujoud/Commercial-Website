@@ -40,7 +40,10 @@ i18n
           "Best": "We are the best in the market",
           "houtat":"We offer a range of fresh products, such as whole or gutted fish, fillets of white fish, cephalopods and pelagics. These products can be packaged in cardboard or polyester boxes, as well as in sachets or cling film, according to the preferences of our customers.",
           "camion":"The PESCATITAN company specializes in the processing of seafood products. To guarantee the quality and freshness of its products, we have insulated trucks dedicated to transport from the ports to its manufacturing site. These trucks are equipped with high-performance refrigeration systems that maintain a constant temperature inside the trailer.",
-          "flouka":"The quality of our products greatly depends on our supply flow, which is a key element in our production process. We pride ourselves on the satisfaction of our customers, whether local or international, who testify the quality of our products." 
+          "flouka": "The quality of our products greatly depends on our supply flow, which is a key element in our production process. We pride ourselves on the satisfaction of our customers, whether local or international, who testify the quality of our products.",
+          "ex": "EXPLORE",
+          "sv": "Services and Advantages",
+          "mr":"more ...",
         },
       },
         fr: {
@@ -67,7 +70,11 @@ i18n
             "Best": "Nous sommes les meilleurs du marché",
             "ididat":"Dans le secteur agroalimentaire, la propreté est d'une importance capitale. Nous avons donc investi une somme considérable dans l'aménagement d'un laboratoire hautement équipé, ainsi que dans des installations sanitaires et des vestiaires pour garantir un environnement de travail propre et hygiénique. Nous avons également mis en place un système d'évacuation des eaux pour assurer la salubrité de nos installations.",
             "camion":"La société PESCATITAN est spécialisée dans la transformation des produits de la mer. Pour garantir la qualité et la fraîcheur de ses produits, nous disposons des camions isothermes dédiés au transport depuis les ports jusqu'à son site de fabrication. Ces camions sont équipés de systèmes de réfrigération performants qui permettent de maintenir une température constante à l'intérieur de la remorque.",
-            "houtat":"Nous proposons une gamme de produits frais, tels que des poissons entiers ou éviscérés, des filets de poissons blancs, des céphalopodes et des pélagiques. Ces produits peuvent être conditionnés dans des caisses en carton ou en polyester, ainsi que dans des sachets ou du film alimentaire, selon les préférences de nos clients.",            "flouka":"La qualité de nos produits dépend grandement de notre flux d'approvisionnement, qui est un élément clé dans notre processus de production. Nous sommes fiers de la satisfaction de nos clients, qu'ils soient locaux ou internationaux, qui témoignent de la qualité de nos produits."
+            "houtat": "Nous proposons une gamme de produits frais, tels que des poissons entiers ou éviscérés, des filets de poissons blancs, des céphalopodes et des pélagiques. Ces produits peuvent être conditionnés dans des caisses en carton ou en polyester, ainsi que dans des sachets ou du film alimentaire, selon les préférences de nos clients.",
+            "flouka": "La qualité de nos produits dépend grandement de notre flux d'approvisionnement, qui est un élément clé dans notre processus de production. Nous sommes fiers de la satisfaction de nos clients, qu'ils soient locaux ou internationaux, qui témoignent de la qualité de nos produits.",
+            "ex": "EXPLORE",
+            "sv": "Services and Advantages",
+            "mr":"plus ...",
           },
         },
         gr: {
@@ -95,7 +102,10 @@ i18n
             "ididat": "In der Agrar- und Lebensmittelbranche ist Sauberkeit von größter Bedeutung, daher haben wir viel Geld in die Entwicklung eines hoch ausgestatteten Labors sowie sanitärer Einrichtungen und Umkleidekabinen investiert, um eine saubere und saubere Umgebung zu gewährleisten hygienische Arbeitsbedingungen. Außerdem haben wir eine Wasserableitung eingerichtet, um die Sicherheit unserer Anlagen zu gewährleisten.",
             "houtat":"Wir bieten eine Reihe frischer Produkte an, wie ganze oder ausgenommene Fische, Weißfischfilets, Kopffüßer und pelagische Arten. Diese Produkte können je nach Bedarf in Kartons oder Polyesterkartons sowie in Beuteln oder Frischhaltefolie verpackt werden den Vorlieben unserer Kunden.",
             "camion":"Das Unternehmen PESCATITAN ist auf die Verarbeitung von Fischprodukten spezialisiert. Um die Qualität und Frische seiner Produkte zu garantieren, verfügen wir über isolierte Lastwagen, die für den Transport von den Häfen zu seinem Produktionsstandort bestimmt sind. Diese Lastwagen sind mit einer Hochleistungskühlung ausgestattet Systeme, die eine konstante Temperatur im Anhänger aufrechterhalten.",
-            "flouka": "Die Qualität unserer Produkte hängt stark von unserem Lieferfluss ab, der ein Schlüsselelement in unserem Produktionsprozess ist. Wir sind stolz auf die Zufriedenheit unserer Kunden, ob lokal oder international, die die Qualität unserer Produkte bezeugen. "
+            "flouka": "Die Qualität unserer Produkte hängt stark von unserem Lieferfluss ab, der ein Schlüsselelement in unserem Produktionsprozess ist. Wir sind stolz auf die Zufriedenheit unserer Kunden, ob lokal oder international, die die Qualität unserer Produkte bezeugen. ",
+            "ex": "ERKUNDEN",
+            "sv": "Dienstleistungen und Vorteile",
+            "mr":"mehr ...",
           }
       },
       sp: {
@@ -123,7 +133,10 @@ i18n
           "ididat":"En el sector agroalimentario la limpieza es de suma importancia, por ello hemos invertido una importante cantidad de dinero en el desarrollo de un laboratorio altamente equipado, así como instalaciones sanitarias y vestuarios para garantizar un entorno limpio y condiciones higiénicas de trabajo, además hemos habilitado un sistema de drenaje de agua para garantizar la seguridad de nuestras instalaciones.",
           "houtat":"Ofrecemos una gama de productos frescos, como pescado entero o eviscerado, filetes de pescado blanco, cefalópodos y pelágicos. Estos productos se pueden envasar en cajas de cartón o poliéster, así como en sobres o film transparente, según a las preferencias de nuestros clientes.",
           "camion":"La empresa PESCATITAN se especializa en el procesamiento de productos del mar. Para garantizar la calidad y frescura de sus productos, contamos con camiones isotérmicos dedicados al transporte desde los puertos hasta su sitio de fabricación. Estos camiones están equipados con refrigeración de alto rendimiento sistemas que mantienen una temperatura constante dentro del remolque",
-          "flouka":"La calidad de nuestros productos depende en gran medida de nuestro flujo de suministro, que es un elemento clave en nuestro proceso de producción. Nos enorgullecemos de la satisfacción de nuestros clientes, ya sean locales o internacionales, quienes dan fe de la calidad de nuestros productos. "
+          "flouka": "La calidad de nuestros productos depende en gran medida de nuestro flujo de suministro, que es un elemento clave en nuestro proceso de producción. Nos enorgullecemos de la satisfacción de nuestros clientes, ya sean locales o internacionales, quienes dan fe de la calidad de nuestros productos. ",
+          "ex": "EXPLORAR",
+          "sv": "Servicios y beneficios",
+          "mr":"más ...",
         }
         }
     },

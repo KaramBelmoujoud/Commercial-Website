@@ -18,21 +18,21 @@ function Home() {
   return (
     <div className='overflow-x-hidden overflow-hidden bg-slate-50 scrollbar-hide'>
      <div className='flex justify-center content-center '>
-    <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
+          <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
        </div>  
           <Entreheader />
           <AboutUs />
-          <div className='flex flex-col justify-between items-start  mb-9'>
-          <span class="w-full h-2 rounded-xl bg-blue-900 ml-5 lg:w-2/3 "/>
+          <div className='flex flex-col justify-between items-start mb-9'>
+          <span class="w-full h-2 rounded-xl bg-blue-900 ml-5 lg:w-2/3 drop-shadow-2xl"/>
           </div>
           <Prodslide/>
           <div className='flex flex-col justify-between items-end '>
-          <span class="w-full h-2 rounded-xl bg-blue-900 mr-5 lg:w-2/3 "/>
+          <span class="w-full h-2 rounded-xl bg-blue-900 mr-5 lg:w-2/3 drop-shadow-2xl"/>
           </div>
           <Services />
           {/* <ContactUs /> */}
           <Footer />
-      </div>
+    </div>
 
 
 
