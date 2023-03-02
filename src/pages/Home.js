@@ -4,51 +4,13 @@ import  product  from '../assets/data/products'
 import pesca from '../assets/pes.png'
 import { slideInUp } from 'react-animations'
 import AboutUs from '../components/AboutUs';
-import Carousel from 'react-material-ui-carousel'
+
 import Footer from '../components/Footer';
 import Entreheader from '../components/Entreheader';
 import Services from '../components/services';
 
 
 function Home() {
-  const slides = [
-    {
-      image: require("../assets/image4.jpeg"),
-      title: "Denté",
-      description: "Denton",
-      clickEvent: "sliderClick"
-    },
-    {
-      image: require("../assets/image5.jpeg"),
-      title: "Sabre",
-      description: "Samta | Sif",
-      clickEvent: "sliderClick"
-    },
-    {
-      image: require("../assets/image6.jpeg"),
-      title: "Saint pierre",
-      description: "Moussa",
-      clickEvent: "sliderClick"
-    },
-    {
-      image: require("../assets/image9.jpeg"),
-      title: "Denté",
-      description: "Denton",
-      clickEvent: "sliderClick"
-    },
-    {
-      image: require("../assets/image8.jpeg"),
-      title: "Sabre",
-      description: "Samta | Sif",
-      clickEvent: "sliderClick"
-    },
-    {
-      image: require("../assets/image7.png"),
-      title: "Saint pierre",
-      description: "Moussa",
-      clickEvent: "sliderClick"
-    }
-  ]
   
   return (
     <div className='overflow-hidden'>
@@ -84,6 +46,7 @@ function Home() {
           </Carousel>
 
           </div>
+          <Services />
           {/* <ContactUs /> */}
           <Footer />
       </div>
