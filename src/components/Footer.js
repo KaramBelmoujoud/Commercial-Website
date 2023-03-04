@@ -54,7 +54,7 @@ function Footer() {
             <img src={pescal} alt="logo" className="object-contain invisible 2xl:visible" />
           </div>
           <div>
-            <h2 className='text-3xl text-white mt-5'>{t('Contactus')}</h2>
+            <h2 className='text-3xl text-white -mt-10 lg:mt-5'>{t('Contactus')}</h2>
             <h3 className='text-1xl text-white w-80 pt-5'>{t('Description')}</h3>
             <h3 className='text-1x3 text-white w-80 pt-2'><LocalPhoneOutlinedIcon fontSize="small"/>+212 673653203</h3>
             <h3 className='text-1x3 text-white w-80 pt-1'><EmailOutlinedIcon fontSize="small"/> farid@pescatitan.net</h3>
@@ -82,7 +82,7 @@ function Footer() {
           </div> 
           
           </div>
-          <div className='flex flex-col justify-between items-center mt-14'>
+          <div className='flex flex-col justify-between items-center mt-5 lg:mt-14'>
             <span class="w-full h-px bg-white  lg:w-10/12 bottom-0"/>
             <h1 className='text-lg font-medium p-2'>
                 © 2023 Pescatitan. All rights reserved.

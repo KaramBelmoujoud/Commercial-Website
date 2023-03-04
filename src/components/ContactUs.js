@@ -41,16 +41,16 @@ const { t } = useTranslation();
       <div className='flex flex-col absolute items-center justify-center left-0 right-0 top-0 bottom-0 '>
         <img src={pesca} alt="logo" className="visible" />
                 </div> 
-              <div id="Contact" className='flex flex-col items-center justify-center max-w-full h-full lg:max-h-screen '>
+      <div id="Contact" className='flex flex-col items-center justify-center mt-9 max-w-full h-full lg:max-h-screen '>
 
-        <div className='backdrop-blur-sm m-10 bg-white/30 box-content w-400 py-1 border-4 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 lg:hover:scale-105   hover:bg-white duration-300'>  
+        <div className='backdrop-blur-sm m-10  bg-white/30 box-content py-1 border-4 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 lg:hover:scale-105   hover:bg-white duration-300'>  
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mx-1 my-1 lg:gap-40 lg:mx-20 lg:my-10'>
               <div className='shrink'>
-              <h1 className='text-center lg:text-left pt-2 lg:mt-20 text-lg lg:text-6xl font-bold text-sky-900'>{t('Contactus')}</h1>
+              <h1 className='text-center lg:text-left lg:pt-2 lg:mt-20 text-lg lg:text-6xl font-bold text-sky-900'>{t('Contactus')}</h1>
                 <br/>
-              <h2 className='mt-5 text-justify ml-2 max-w-md '>{t('Contact')}</h2>
+              <h2 className='lg:mt-5 text-justify ml-2 max-w-md '>{t('Contact')}</h2>
               <h2 className='mt-5 text-justify ml-2 max-w-md '><EmailOutlinedIcon fontSize="small"/> farid@pescatitan.net</h2>
-              <h2 className='mt-5 text-justify ml-2 max-w-md '><LocalPhoneOutlinedIcon fontSize="small"/>+212 661281000</h2>
+              <h2 className='mt-2 lg:mt-5 text-justify ml-2 max-w-md '><LocalPhoneOutlinedIcon fontSize="small"/>+212 661281000</h2>
 
               </div> 
     <form ref={form}
@@ -137,8 +137,8 @@ const { t } = useTranslation();
                     {t('Message')}
           </label>
           <textarea
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-1 mb-1 lg:py-3 lg:px-4 lg:mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48"
-            id="message"
+            className="appearance-none block w-full bg-gray-200 resize-none text-gray-700 border rounded py-1 mb-1 lg:py-3 lg:px-4 lg:mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 lg:h-52"
+                    id="message"
                                     value={message}
                                     name="message"
             onChange={event => setMessage(event.target.value)}

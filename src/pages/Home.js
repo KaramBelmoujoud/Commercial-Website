@@ -1,14 +1,11 @@
 import React from 'react'
-import { keyframes } from "styled-components";
-import  product  from '../assets/data/products'
-import pesca from '../assets/pes.png'
-import { slideInUp } from 'react-animations'
 import AboutUs from '../components/AboutUs';
-
 import Footer from '../components/Footer';
 import Entreheader from '../components/Entreheader';
 import Services from '../components/services';
 import Prodslide from '../components/prodslide';
+import ScrollToTop from 'react-scroll-to-top';
+import { ReactComponent as MySVG } from "../logos.svg";
 
 
 
@@ -17,6 +14,7 @@ function Home() {
   
   return (
     <div className='overflow-x-hidden overflow-hidden bg-slate-50 scrollbar-hide'>
+      <ScrollToTop smooth className='rounded-full flex justify-center items-center shadow-xl' component={<MySVG fill="black"/>}/>
      <div className='flex justify-center content-center '>
           <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
        </div>  

@@ -13,7 +13,7 @@ function Entreheader() {
 <div className='bg-cover bg-no-repeat h-screen w-screen bg-[url("/src/assets/Sable.png")]'>
     <div className='flex flex-col items-center justify-center h-full'>
       <div className='text-center'>
-        <img src={pes} alt="logo" className=" scale-75 mt-5 lg:mt-0 lg:scale-100" />
+        <img src={pes} alt="logo" className=" scale-75 mt-5 lg:mt-24 lg:scale-100" />
 
         <a href="Contactus">
           <button  className= ' w-3/4 bg-blue-900 hover:bg-gray-700 text-white font-bold text-xl py-2 px-4 rounded-md mt-4'>
@@ -21,7 +21,7 @@ function Entreheader() {
           </button>
           </a>
       </div>
-      <div className='flex items-stretch mt-56'>
+      <div className='flex items-stretch mt-52'>
             <p className='items-end font-serif text-lg font-bold'> {t('ex')}</p>
       </div>
         <KeyboardDoubleArrowDownOutlinedIcon className='text-blue-900' sx={{ fontSize: 40 }} />

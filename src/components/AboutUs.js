@@ -24,18 +24,18 @@ function AboutUs() {
     <div className=''>
    {
       <div ref={ref} className="mx-auto max-w-7xl mb-10 lg:mb-72 w-screen h-auto lg:h-screen " id="AboutUs" style={{ y: animation }}>
-              <h1 className="text-4xl font-bold my-10 mt-24 text-center"  >{t('about_us_title')}</h1>
+              <h1 className="text-4xl font-serif my-10 mt-24 text-center"  >{t('about_us_title')}</h1>
     <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-28'>
-      <img src={azayz} alt='fish' className='h- mx-auto rounded-lg shadow-2xl' />
+      <img src={azayz} alt='fish' className='scale-90 lg:scale-100 mx-auto rounded-lg shadow-2xl' />
       <div >
-    <p className=" text-lg li text-justify p-5">{t('about_us')}<br></br><br></br></p>
+    <p className=" text-sm lg:text-lg li text-justify p-5">{t('about_us')}<br></br><br></br></p>
               <p className='text-center text-lg'><b className='text-blue-500'>{t("thankyou")}</b></p>
       </div>
       </div>
-              <h2 className="text-4xl font-bold my-10 mt- text-center">{t('our_mission_title')}</h2>
+              <h2 className="text-4xl font-serif my-10 mt- text-center">{t('our_mission_title')}</h2>
     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-                <p className="my-1 text-lg text-justify p-5">{t('our_mission')}</p>
-    <img src={export1} alt='fish' className='h- mx-auto rounded-lg shadow-2xl' />
+                <p className="my-1 text-sm lg:text-lg text-justify p-5">{t('our_mission')}</p>
+    <img src={export1} alt='fish' className='scale-90 lg:scale-100 mx-auto rounded-lg shadow-2xl' />
       </div>
     </div>
 }

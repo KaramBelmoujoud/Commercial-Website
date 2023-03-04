@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import Carousel from 'react-material-ui-carousel'
 
+
 function Prodslide() {
   const { t } = useTranslation();
     const slides = [
@@ -14,7 +15,7 @@ function Prodslide() {
         {
           image: require("../assets/image5.jpeg"),
           title: "Sabre",
-          description: "Samta | Sif",
+          description: "Samta | Sif | Sable",
           clickEvent: "sliderClick"
         },
         {
@@ -25,27 +26,27 @@ function Prodslide() {
         },
         {
           image: require("../assets/image9.jpeg"),
-          title: "Denté",
-          description: "Denton",
+          title: "Congre",
+          description: "Sennour | lfarkh | Sighar | congrio",
           clickEvent: "sliderClick"
         },
         {
           image: require("../assets/image8.jpeg"),
-          title: "Sabre",
-          description: "Samta | Sif",
+          title: "Sole",
+          description: "Hout-moussa",
           clickEvent: "sliderClick"
         },
         {
           image: require("../assets/image7.png"),
-          title: "Saint pierre",
-          description: "Moussa",
+          title: "Faux saint pierre | Saint pierre argenté",
+          description: "Faux saint pierre | saint pierre argenté",
           clickEvent: "sliderClick"
         }
       ]
     
   return (
     <div>
-      <h1 className="text-4xl font-bold  text-center" >{t('product')}</h1>
+      <h1 className="text-4xl font-serif  text-center" >{t('product')}</h1>
     <div className='left-96 right-96 my-14'>
     <Carousel navButtonsAlwaysVisible='true'>
     {

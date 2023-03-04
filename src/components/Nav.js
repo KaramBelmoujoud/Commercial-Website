@@ -148,13 +148,18 @@ export default function Example() {
         <a href="Products" className="flex items-center focus:underline underline-offset-8  scroll-auto font-serif">
           {t('product')}
         </a>
-      </Typography>
-      <div className="mt-2 h-8 z-50 w-36">
+        </Typography>
+        <div className="m-auto ">
+                  <Button href='Contactus' variant="gradient" size="md" fullWidth className="mb-2">
+<a href="Contactus"><span className="font-serif text-gray-900">{t('Contactus')}</span></a>
+        </Button></div>
+                  
+      <div className="m-auto h-8 z-50">
           <div onClick={()=> setOpen(!open)}>
           <KeyboardArrowDownOutlinedIcon fontSize="small" sx={{ color: "black" }}/>
             <LanguageOutlinedIcon fontSize="large" sx={{ color: "black" }} />
           </div>
-          <ul className={open ? ' overflow-y-auto max-h-52 shadow-md rounded-md z-50' : 'mt-2 overflow-y-auto max-h-0'} >
+          <ul className='mt-2 overflow-y-auto max-h-52 shadow-md rounded-md z-50 flex' >
             {
               language.map((country) =>
                 <li key={country.id} className="p-2 text-sm z-auto text-black bg-gray-200 hover:bg-black hover:text-white" onClick={() => { i18next.changeLanguage(country.id); setOpen(!open) }}><span class={`fi fi-${country.code} mx-2`}></span>{t(country.id)}</li>
@@ -224,9 +229,7 @@ export default function Example() {
       </div>
       <MobileNav open={openNav}>
           {pnavList}
-        <Button href='Contactus' variant="gradient" size="sm" fullWidth className="mb-2">
-          <a href="Contactus"><span className="font-serif">{t('Contactus')}</span></a>
-        </Button>
+
       </MobileNav>
       </Navbar>
       </div>

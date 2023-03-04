@@ -201,7 +201,7 @@ const product = [
   "id": 34,
   "name": "Poisson tuile",
   "nomlocal": "Amadai | tete de cheval",
-  "image": require("../image32.jpeg")
+  "image": require("../image32.png")
  },
  {
   "id": 35,
@@ -213,7 +213,7 @@ const product = [
   "id": 36,
   "name": "Sardine ",
   "nomlocal": "sardine",
-  "image": require("../image34.jpeg")
+  "image": require("../image34.png")
  },
  {
   "id": 37,
@@ -249,7 +249,7 @@ const product = [
   "id": 42,
   "name": "Crabe",
   "nomlocal": "Crabe | boujniba | kricha",
-  "image": require("../image40.jpeg")
+  "image": require("../image40.png")
  },
  {
   "id": 43,
@@ -285,7 +285,7 @@ const product = [
   "id": 48,
   "name": "Sépiole",
   "nomlocal": "Sépiola",
-  "image": require("../image46.jpeg")
+  "image": require("../image46.png")
  },
  {
   "id": 49,
@@ -297,7 +297,7 @@ const product = [
   "id": 50,
   "name": "Calamar | encornet",
   "nomlocal": "Calamar | Vrais calmar",
-  "image": require("../image48.jpeg")
+  "image": require("../image48.png")
  }
 ]
 
