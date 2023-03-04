@@ -32,7 +32,7 @@ function Products() {
         </div>
                 {window.innerWidth > 768 ? (<div>
       <div className='top-10 left-3 absolute'>
-        <img src={pesca} alt="logo" className="scale-50 invisible sm:visible" />
+        <img src={pesca} alt="logo" className="scale-50 invisible 2xl:visible" />
           </div> 
 
                 <div className='top-20 right-28 absolute'>
