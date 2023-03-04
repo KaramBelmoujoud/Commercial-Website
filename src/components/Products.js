@@ -14,7 +14,7 @@ function Products() {
   const { t } = useTranslation();
     return (
         
-        <div className='relative border-b-4 overflow-x-hidden'>
+        <div className='overflow-x-hidden scrollbar-hide'>
             <ScrollToTop smooth className='rounded-full flex justify-center items-center shadow-xl' component={<MySVG fill="black"/>}/>
         <Example/>
             <div className='bg-cover bg-no-repeat mt-12 lg:mt-0 h-96 w-screen bg-[url("/src/assets/Sable.png")]'>

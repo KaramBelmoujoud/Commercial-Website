@@ -1,9 +1,7 @@
-import { IconButton } from '@material-tailwind/react'
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Wave from 'react-wavify'
 import pescal from '../assets/pescalong.png'
-import { phone } from '../phone.svg'
 import { useTranslation } from 'react-i18next';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';

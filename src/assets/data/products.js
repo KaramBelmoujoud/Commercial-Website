@@ -63,7 +63,7 @@ const product = [
   "id": 11,
   "name": "Dorade royal",
   "nomlocal": "Dorade royal | dorada",
-  "image": require("../image11.jpeg")
+  "image": require("../image11.png")
  },
  {
   "id": 12,

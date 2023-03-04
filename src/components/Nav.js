@@ -6,7 +6,6 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import pesca from "../assets/pes.png";
 import { useTranslation } from "react-i18next";
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -178,7 +177,7 @@ export default function Example() {
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
-          href="#"
+          href="/#"
           variant="h1"
           className=" cursor-pointer py-1.5 font-medium text-blue-gray-400 hover:text-blue-gray-900"
         >

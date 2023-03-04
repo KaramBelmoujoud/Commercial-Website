@@ -41,6 +41,12 @@ function Prodslide() {
           title: "Faux saint pierre | Saint pierre argenté",
           description: "Faux saint pierre | saint pierre argenté",
           clickEvent: "sliderClick"
+        },
+      {
+        image: require("../assets/more.png"),
+        title: <a href='/Products'>More</a>,
+        Description: <a href='/Products' className=' text-center mb-5 lg:mr-3 mr-12 underline'>Show all products</a>,
+        clickEvent:""
         }
       ]
     
@@ -55,15 +61,15 @@ function Prodslide() {
   
        
         <div class="max-w-sm rounded overflow-hidden h-auto shadow-xl m-auto  ">
-        <img class="w-full" src={prod.image} alt="prods"/>
+        <img class="w-full" src={prod.image} alt="prods" style={{height:"250px"}}/>
         <div class="px-6 py-4">
-          <div class="font-bold text-2xl mb-2">{prod.title}</div>
+          <div class="font-bold text-xl mb-2">{prod.title}</div>
         </div>
         <div class="px-6 pt-4 pb-2">
           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{prod.description}</span>
         </div>
         {
-          prod == slides[5] ? <p className=' text-end mb-5 lg:mr-3 mr-12 underline'><a href='/Products'>{t('mr')}</a></p> : null           
+          prod === slides[6] ? <p className=' text-end mb-5 lg:mr-3 mr-12 underline'><a href='/Products'>{t('mr')}</a></p> : null           
         }
       </div>
       
