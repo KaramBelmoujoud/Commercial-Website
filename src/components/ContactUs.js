@@ -107,7 +107,7 @@ const { t } = useTranslation();
           value={item}
           onChange={event => setItem(event.target.value)}
         >
-                      <option value="">--- Select a product ---</option>
+                      <option value="">--- All ---</option>
                       {product.map((prod) => {
                         return (
                           <option value="item1">{prod.name}</option>

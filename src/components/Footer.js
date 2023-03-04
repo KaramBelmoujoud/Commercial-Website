@@ -75,7 +75,7 @@ function Footer() {
               placeholder='Email'
               onChange={event => setEmail(event.target.value)}
             /></div>
-            <div className='bg-blue-200 rounded-md hover:bg-black w-24 justify-center items-center'>
+            <div className='flex bg-blue-200 rounded-md hover:bg-black w-auto mx-28 text-center justify-center items-center'>
               <Button className="p-4 text-sm z-auto text-white bg-transparent hover:bg-black hover:text-white">{t('sub')}</Button>
             </div>
             
