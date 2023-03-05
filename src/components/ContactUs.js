@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('I want to know all');
     const [item, setItem] = useState('');
 const form = useRef();
   const { t } = useTranslation();
