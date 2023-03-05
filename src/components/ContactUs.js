@@ -6,7 +6,8 @@ import Example from './Nav';
 import { useTranslation } from 'react-i18next';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -14,18 +15,23 @@ function ContactForm() {
     const [message, setMessage] = useState('');
     const [item, setItem] = useState('');
 const form = useRef();
-const { t } = useTranslation();
+  const { t } = useTranslation();
+
   function handleSubmit(event) {
-    
-      event.preventDefault();
-      emailjs.sendForm('service_i2zgrvg', 'template_sannr9g', form.current, 'ylRhxG10u7hKpO6KH')
+    event.preventDefault();
+    if (name === "" || email === "") {
+      notify2();
+      <ToastContainer />
+    }
+    else if (name !== "" || email !== ""){
+      notify();
+      emailjs.sendForm('service_2h59dc5', 'template_duzna1q', form.current, 'VNIFIltpxCigezdz_')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-
-    // Send form data to server or API here
+          // Send form data to server or API here
     console.log(name, email, message);
 
     // Clear form fields
@@ -33,11 +39,34 @@ const { t } = useTranslation();
     setEmail('');
     setMessage('');
 
+      }
+
+
   }
- 
+ const notify = () => toast.info(<div><EmailOutlinedIcon fontSize="small"/><span> Email sent</span></div>,{
+position: "top-center",
+autoClose: 2000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+ });
+  const notify2 = () => toast.warn('Empty Name or Email!', {
+position: "top-center",
+autoClose: 3000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+});
   return (
     <div className='bg-cover bg-no-repeat h-screen w-screen bg-[url("/src/assets/Sable.png")] z-0 overflow-hidden'>
-      <Example/>
+      <Example />
+      <ToastContainer />
       <div className='flex flex-col absolute items-center justify-center left-0 right-0 top-0 bottom-0 '>
         <img src={pesca} alt="logo" className="visible" />
                 </div> 
@@ -64,7 +93,9 @@ const { t } = useTranslation();
             htmlFor="name"
           >
                     {t('Name')}
-          </label>
+                  </label>
+                  <div>
+                    
           <input
             className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="name"
@@ -72,7 +103,7 @@ const { t } = useTranslation();
                                     name="user_name"
             value={name}
             onChange={event => setName(event.target.value)}
-          />
+          /></div>
         </div>
         <div className="w-full md:w-1/2 px-1">
           <label
@@ -107,10 +138,10 @@ const { t } = useTranslation();
           value={item}
           onChange={event => setItem(event.target.value)}
         >
-                      <option value="">--- All ---</option>
+                      <option value="All products">--- All ---</option>
                       {product.map((prod) => {
                         return (
-                          <option value="item1">{prod.name}</option>
+                          <option value={prod.name}>{prod.name}</option>
                         )
                       })}
         </select>
@@ -138,7 +169,7 @@ const { t } = useTranslation();
           </label>
           <textarea
             className="appearance-none block w-full bg-gray-200 resize-none text-gray-700 border rounded py-1 mb-1 lg:py-3 lg:px-4 lg:mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 lg:h-52"
-                    id="message"
+                    id="message" 
                                     value={message}
                                     name="message"
             onChange={event => setMessage(event.target.value)}
@@ -149,10 +180,11 @@ const { t } = useTranslation();
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                                 type="submit"
-                                value="send"
+                  value="send"
         >
           Send
-        </button>
+                </button>
+                
       </div>
                     </form>
      </div>

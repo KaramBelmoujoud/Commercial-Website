@@ -9,15 +9,12 @@ import { Button } from '@mui/material';
 
 function Footer() {
     const { t } = useTranslation();
-    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [item, setItem] = useState('');
     const form = useRef();
 
   function handleSubmit(event) {
       event.preventDefault();
-      emailjs.sendForm('service_i2zgrvg', 'template_sannr9g', form.current, 'ylRhxG10u7hKpO6KH')
+      emailjs.sendForm('service_2h59dc5', 'template_4mfalwr', form.current, 'VNIFIltpxCigezdz_')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -25,12 +22,10 @@ function Footer() {
       });
 
     // Send form data to server or API here
-    console.log(name, email, message);
+    console.log(email);
 
     // Clear form fields
-    setName('');
     setEmail('');
-    setMessage('');
 
   }
   return (
@@ -63,6 +58,7 @@ function Footer() {
               {t('sub')}
               </label>
             </div>
+                <form ref={form} onSubmit={handleSubmit} className="flex flex-col gap-2">
             <div>
               <input
               className="appearance-none block w-80 bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -74,9 +70,9 @@ function Footer() {
               onChange={event => setEmail(event.target.value)}
             /></div>
             <div className='flex bg-blue-200 rounded-md hover:bg-black w-auto mx-28 text-center justify-center items-center'>
-              <Button className="p-4 text-sm z-auto text-white bg-transparent hover:bg-black hover:text-white">{t('sub')}</Button>
+              <Button className="p-4 text-sm z-auto text-white bg-transparent hover:bg-black hover:text-white" type="submit" value="send">{t('sub')}</Button>
             </div>
-            
+            </form>
           </div> 
           
           </div>
