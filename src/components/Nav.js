@@ -149,8 +149,8 @@ export default function Example() {
         </a>
         </Typography>
         <div className="m-auto ">
-                  <Button href='/#/contactus' variant="gradient" size="md" fullWidth className="mb-2">
-<a href="/#/contactus"><span className="font-serif text-gray-900">{t('Contactus')}</span></a>
+                  <Button href='/#/ContactUs' variant="gradient" size="md" fullWidth className="mb-2">
+<a href="/#/ContactUs"><span className="font-serif text-gray-900">{t('Contactus')}</span></a>
         </Button></div>
                   
       <div className="m-auto h-8 z-50">
@@ -185,8 +185,8 @@ export default function Example() {
         </Typography>
 
         <div className="hidden lg:block">{navList}</div>
-        <Button href='/#/contactus' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
-            <a href="/#/contactus"><span className="font-serif">{t('Contactus')}</span></a>
+        <Button href='/#/ContactUs' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
+            <a href="/#/ContactUs"><span className="font-serif">{t('Contactus')}</span></a>
         </Button>
         <IconButton
           variant="text"

@@ -155,8 +155,8 @@ function App() {
     <div >
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/products" element={<Products />} />
-          <Route exact path="/contactUs" element={<ContactUs />} />
+          <Route exact path="/Products" element={<Products />} />
+          <Route exact path="/ContactUs" element={<ContactUs />} />
         </Routes>
     </div>
     );
