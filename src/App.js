@@ -153,7 +153,7 @@ function App() {
   return (
 
     <div >
-      <Router basename='/'>
+      <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/products" element={<Products />} />
