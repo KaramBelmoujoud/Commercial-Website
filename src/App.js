@@ -155,9 +155,9 @@ function App() {
     <div >
       <Router basename='/'>
         <Routes>
-          <Route exact path="" element={<Home />} />
-          <Route exact path="/Products" element={<Products />} />
-          <Route exact path="/ContactUs" element={<ContactUs />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/products" element={<Products />} />
+          <Route exact path="/contactUs" element={<ContactUs />} />
         </Routes>
       </Router>
     </div>
