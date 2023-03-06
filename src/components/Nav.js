@@ -144,13 +144,13 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="Products" className="flex items-center focus:underline underline-offset-8  scroll-auto font-serif">
+        <a href="/products" className="flex items-center focus:underline underline-offset-8  scroll-auto font-serif">
           {t('product')}
         </a>
         </Typography>
         <div className="m-auto ">
-                  <Button href='Contactus' variant="gradient" size="md" fullWidth className="mb-2">
-<a href="Contactus"><span className="font-serif text-gray-900">{t('Contactus')}</span></a>
+                  <Button href='/contactus' variant="gradient" size="md" fullWidth className="mb-2">
+<a href="/contactus"><span className="font-serif text-gray-900">{t('Contactus')}</span></a>
         </Button></div>
                   
       <div className="m-auto h-8 z-50">
@@ -185,8 +185,8 @@ export default function Example() {
         </Typography>
 
         <div className="hidden lg:block">{navList}</div>
-        <Button href='Contactus' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
-            <a href="Contactus"><span className="font-serif">{t('Contactus')}</span></a>
+        <Button href='/contactus' variant="gradient" size="lg" className={colorChange ? "hidden shadow-xl lg:inline-block text-slate-800 " : "text-slate-800 hidden shadow-xl lg:inline-block "}>
+            <a href="/contactus"><span className="font-serif">{t('Contactus')}</span></a>
         </Button>
         <IconButton
           variant="text"
