@@ -153,7 +153,7 @@ function App() {
   return (
 
     <div >
-      <HashRouter basename='/'>
+      <HashRouter baseline='/'>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Products" element={<Products />} />
