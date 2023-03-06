@@ -6,6 +6,7 @@ import ContactUs from '../src/components/ContactUs';
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
+import AboutUs from './components/AboutUs';
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -154,9 +155,11 @@ function App() {
 
     <div >
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/Products" element={<Products />} />
-          <Route exact path="/ContactUs" element={<ContactUs />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/#AboutUs" element={<AboutUs />} />
+        <Route exact path="/Products" element={<Products />} />
+        <Route exact path="/ContactUs" element={<ContactUs />} />
+        
         </Routes>
     </div>
     );
