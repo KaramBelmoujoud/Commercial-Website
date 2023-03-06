@@ -107,7 +107,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="Products" className="flex items-center focus:underline underline-offset-8  scroll-auto font-serif">
+        <a href="/products" className="flex items-center focus:underline underline-offset-8  scroll-auto font-serif">
           {t('product')}
         </a>
       </Typography>
