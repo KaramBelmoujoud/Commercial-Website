@@ -126,18 +126,17 @@ export default function Example() {
         <a href="/" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
           {t('home')}
         </a>
-      </Typography>
+        </Typography>
+        <HashLink to="/#AboutUs">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold"
+        className="p-1 font-semibold flex items-center focus:underline underline-offset-8 scroll-auto font-serif"
       >
-        <a href="#AboutUs" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
           {t('about_us_title')}
-         
-        </a>
-      </Typography>
+          </Typography>
+          </HashLink>
       <Typography
         as="li"
         variant="small"
