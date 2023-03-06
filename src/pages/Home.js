@@ -16,7 +16,6 @@ function Home() {
     <div className='overflow-x-hidden overflow-hidden bg-slate-50 scrollbar-hide'>
       <ScrollToTop smooth className='rounded-full flex justify-center items-center shadow-xl' component={<MySVG fill="black"/>}/>
      <div className='flex justify-center content-center '>
-          <h1 className='text-6xl absolute text-center ml-8  mt-72'>Pescatitan</h1>
        </div>  
           <Entreheader />
           <AboutUs />
