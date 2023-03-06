@@ -155,7 +155,7 @@ function App() {
     <div >
       <Router basename='/Pescatitan'>
         <Routes>
-          <Route exact path="/Pescatitan" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/Products" element={<Products />} />
           <Route exact path="/ContactUs" element={<ContactUs />} />
         </Routes>
