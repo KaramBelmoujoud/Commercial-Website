@@ -13,6 +13,7 @@ import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import i18next from "i18next";
+import { HashLink } from 'react-router-hash-link';
  
 export default function Example() {
   const { t } = useTranslation();
@@ -90,17 +91,16 @@ export default function Example() {
           {t('home')}
         </a>
       </Typography>
+      <HashLink to="/#AboutUs">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold"
+        className="p-1 font-semibold flex items-center focus:underline underline-offset-8 scroll-auto font-serif"
       >
-        <a href="/#AboutUs" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
           {t('about_us_title')}
-         
-        </a>
-      </Typography>
+        </Typography>
+        </HashLink>
       <Typography
         as="li"
         variant="small"
@@ -133,7 +133,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="/#AboutUs" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
+        <a href="#AboutUs" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
           {t('about_us_title')}
          
         </a>

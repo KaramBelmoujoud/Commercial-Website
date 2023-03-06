@@ -10,6 +10,7 @@ import { ReactComponent as MySVG } from "../logos.svg";
 
 
 
+
 function Home() {
   
   return (
@@ -20,7 +21,7 @@ function Home() {
           <Entreheader />
           <AboutUs />
           <div className='flex flex-col justify-between items-start mb-9'>
-          <span class="w-full h-2 rounded-xl bg-blue-900 ml-5 lg:w-2/3 drop-shadow-2xl"/>
+          <span class="w-full h-2 rounded-xl bg-blue-900 ml-5 md:mt-5 sm:mt-7 lg:w-2/3 drop-shadow-2xl"/>
           </div>
           <Prodslide/>
           <div className='flex flex-col justify-between items-end '>

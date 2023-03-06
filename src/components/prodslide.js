@@ -52,7 +52,7 @@ function Prodslide() {
     
   return (
     <div>
-      <h1 className="text-4xl font-serif  text-center" >{t('product')}</h1>
+      <h1 className="text-4xl font-serif text-center" >{t('product')}</h1>
     <div className='left-96 right-96 my-14'>
     <Carousel navButtonsAlwaysVisible='true'>
     {

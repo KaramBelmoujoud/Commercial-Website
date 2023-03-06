@@ -16,26 +16,26 @@ function Services() {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-5 lg:gap-10 lg:h-full '>
         <div className='group flex flex-col bg-white shadow-lg rounded-lg h-40 lg:h-auto lg:p-8 hover:shadow-lg hover:shadow-blue-700/50 transition ease-linear delay-200'>
             <img src={floka}  className='lg:h-16 lg:w-16  m-auto group-hover:hidden lg:group-hover:block'/>
-            <div className='m-auto lg:p-14 font-serif text-xs lg:text-base text-center lg:block hidden group-hover:block'>
+            <div className='m-auto lg:m-auto font-serif text-xs sm:text-sm md:text-md lg:text-base text-center lg:block hidden group-hover:block'>
         <p> {t('flouka')}</p>
         </div>
 
         </div>
         <div className='group flex flex-col bg-white shadow-lg rounded-lg h-40 lg:h-auto lg:p-8 hover:shadow-lg hover:shadow-blue-700/50 transition ease-linear delay-200'>
         <img src={houtat}  className='lg:h-16 lg:w-16 m-auto group-hover:hidden lg:group-hover:block'/>
-        <div className='m-auto lg:p-14 font-serif text-xs lg:text-base text-center lg:block hidden group-hover:block'>
+        <div className='m-auto lg:m-auto font-serif text-xs sm:text-sm md:text-md lg:text-base text-center lg:block hidden group-hover:block'>
         <p>{t('houtat')}</p>
         </div>
         </div>
         <div className='group flex flex-col bg-white shadow-lg rounded-lg h-40 lg:h-auto lg:p-8 hover:shadow-lg hover:shadow-blue-700/50 transition ease-linear delay-200'>
         <img src={camion}  className='scale-150 lg:h-16 lg:w-16 m-auto group-hover:hidden lg:group-hover:block'/>
-       <div className='m-auto lg:p-14 font-serif text-xs lg:text-base text-center lg:block hidden group-hover:block'>
+       <div className='m-auto lg:m-auto font-serif text-xs sm:text-sm md:text-md lg:text-base text-center lg:block hidden group-hover:block'>
         <p> {t('camion')}</p>
         </div>
         </div>
         <div className='group flex flex-col bg-white shadow-lg rounded-lg h-40 lg:h-auto lg:p-8 hover:shadow-lg hover:shadow-blue-700/50 transition ease-linear delay-200'>
         <img src={ididat}  className='lg:h-16 lg:w-16 m-auto group-hover:hidden lg:group-hover:block'/>
-        <div className='m-auto lg:p-14 font-serif text-xs lg:text-base text-center lg:block hidden group-hover:block'>
+        <div className='m-auto lg:m-auto font-serif text-xs sm:text-sm md:text-md lg:text-base text-center lg:block hidden group-hover:block'>
         <p>{t('ididat')}</p>
         </div>
 
