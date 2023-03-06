@@ -15,7 +15,7 @@ function Entreheader() {
       <div className='text-center'>
         <img src={pes} alt="logo" className=" scale-75 mt-5 lg:mt-24 lg:scale-100" />
 
-        <a href="Contactus">
+        <a href="/#/contactus">
           <button  className= ' w-3/4 bg-blue-900 hover:bg-gray-700 text-white font-bold text-xl py-2 px-4 rounded-md mt-4'>
           <span>{t('Contactus')}</span>
           </button>
