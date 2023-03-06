@@ -96,7 +96,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-semibold"
       >
-        <a href="/#aboutus" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
+        <a href="#aboutus" className="flex items-center focus:underline underline-offset-8 scroll-auto font-serif">
           {t('about_us_title')}
          
         </a>
