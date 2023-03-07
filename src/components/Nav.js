@@ -30,10 +30,12 @@ export default function Example() {
     else{
       setColorchange(false);
       sethide(false);
+      
     }
  };
  window.addEventListener('scroll', changeNavbarColor);
   useEffect(() => {
+    
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 970 && setOpenNav(false)
@@ -80,7 +82,7 @@ export default function Example() {
     </div>
   );
   const navList = (
-    <ul className="mb-4 mt-5 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-14 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
