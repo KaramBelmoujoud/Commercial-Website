@@ -23,7 +23,7 @@ export default function Example() {
   const [open, setOpen] = useState(false);
 
   const changeNavbarColor = () =>{
-    if(window.scrollY >= 35){
+    if(window.scrollY >= 48){
       setColorchange(true);
       sethide(true);
     }
@@ -36,7 +36,7 @@ export default function Example() {
   useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
+      () => window.innerWidth >= 970 && setOpenNav(false)
     );
   }, []);
 
@@ -80,7 +80,7 @@ export default function Example() {
     </div>
   );
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-5 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
