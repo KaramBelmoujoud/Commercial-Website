@@ -24,10 +24,6 @@ export default function Example() {
 
   const changeNavbarColor = () =>{
     if (window.scrollY >= 5) {
-      if (window.scrollY == 20)
-      {
-        window.scrollTo({top: 0, behavior: 'smooth'})
-          }
       setColorchange(true);
       sethide(true);
     }
