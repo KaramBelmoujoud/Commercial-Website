@@ -23,7 +23,11 @@ export default function Example() {
   const [open, setOpen] = useState(false);
 
   const changeNavbarColor = () =>{
-    if(window.scrollY >= 48){
+    if (window.scrollY >= 5) {
+      if (window.scrollY == 20)
+      {
+        window.scrollTo({top: 0, behavior: 'smooth'})
+          }
       setColorchange(true);
       sethide(true);
     }
@@ -82,7 +86,7 @@ export default function Example() {
     </div>
   );
   const navList = (
-    <ul className="mb-4 mt-14 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-10 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -174,7 +178,7 @@ export default function Example() {
   return (
     <div>
       <div className={hidobject ? 'hidden' : 'hidden lg:block'}>{contlang}</div>
-    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 rounded-lg':' backdrop-blur-sm text-slate-800 bg-slate-50 w-full left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10 rounded-lg'}>
+    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 rounded-lg':' backdrop-blur-sm text-slate-800 bg-slate-50 w-full top-12 left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10 rounded-lg'}>
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
