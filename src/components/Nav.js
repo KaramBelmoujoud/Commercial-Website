@@ -23,7 +23,7 @@ export default function Example() {
   const [open, setOpen] = useState(false);
 
   const changeNavbarColor = () =>{
-    if (window.scrollY >= 5) {
+    if (window.scrollY >= 50) {
       setColorchange(true);
       sethide(true);
     }
@@ -173,8 +173,8 @@ export default function Example() {
  
   return (
     <div>
-      <div className={hidobject ? 'hidden' : 'hidden lg:block'}>{contlang}</div>
-    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 rounded-lg':' backdrop-blur-sm text-slate-800 bg-slate-50 w-full top-12 left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10 rounded-lg'}>
+      <div className={hidobject ? 'block top-0' : 'hidden lg:block'}>{contlang}</div>
+    <Navbar className={colorChange ? 'w-full left-0 right-0 mx-auto max-w-screen-xl  py-2 px-4 lg:px-8 lg:py-4 shadow-md text-slate-800 bg-slate-50 fixed z-10 rounded-lg top-0':' backdrop-blur-sm text-slate-800 bg-slate-50 w-full top-12 left-0 right-0 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 shadow-xl fixed  z-10 rounded-lg'}>
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
